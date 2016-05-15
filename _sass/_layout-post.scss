@@ -1,0 +1,17 @@
+.post.grid-container {
+  max-width: 710px;
+}
+
+.post-content{
+  img {
+    display: block;
+    max-width: 126%;
+    height: auto;
+    padding: 0.6em 0;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}

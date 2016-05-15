@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<article class="post grid-container">
+    <header class="post-header grid-100">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    </header>
+    <section class="post-content grid-100">
+        {{ content }}
+    </section>
+
+</article>

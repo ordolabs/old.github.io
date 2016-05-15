@@ -1,0 +1,38 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Variables
+$text-font-family: "PT Serif", "Times New Roman", Times, Georgia, serif;
+$text-abbr-font-family: "PT Serif Caption", serif;
+$text-font-size:   18px;
+$text-font-weight: 400;
+$small-font-size:  $text-font-size * 0.875;
+$text-line-height: 1.6;
+
+$heading-font-family: "Open Sans", sans-serif;
+$heading-font-size:   18px;
+$heading-font-weight: 400;
+$heading-line-height: 1.1;
+
+$spacing-unit:     40px;
+
+$text-color:       #444;
+$heading-color:    #222;
+//$background-color: #fdfdfd;
+$background-color: rgb(249, 249, 249);
+$brand-color:      #2a7ae2;
+
+$grey-color: #b0b0b0;
+$grey-color-light: lighten($grey-color, 25%);
+$grey-color-dark:  darken($grey-color, 40%);
+
+@import 'reset';
+@import 'unsemantic';
+@import 'typography';
+@import 'elements';
+@import 'code-highlight';
+@import 'nav';
+@import 'layout-post';
+

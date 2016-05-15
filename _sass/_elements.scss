@@ -1,0 +1,161 @@
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, hr, table,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+/**
+ * Links
+ */
+a {
+    color: $brand-color;
+    text-decoration: none;
+
+    &:visited {
+        color: darken($brand-color, 15%);
+    }
+
+    &:hover {
+        color: $text-color;
+        text-decoration: underline;
+    }
+}
+
+/**
+ * Markup styles
+ */
+b, strong {
+    font-weight: 700;
+}
+
+em, cite, var, i {
+    font-style: italic;
+}
+
+s {
+    text-decoration: line-through;
+}
+
+small {
+    font-size: $text-font-size * 0.8;
+}
+
+abbr {
+    font-family: $text-abbr-font-family;
+    font-size: $text-font-size * 0.8;
+    text-transform: uppercase;
+}
+
+q { quotes: '"' '"' '\'' '\''; }
+
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: #EFEFEF 1px solid;
+    margin: 2em 0;
+    padding: 0;
+}
+
+
+// Lists
+ol, ul {
+    padding-left: 28px;
+    li {
+        margin: 4px 0;
+    }
+}
+
+ul {
+    list-style: disc;
+}
+ol {
+    list-style: decimal;
+}
+
+ol ol, ul ul,
+ul ol, ol ul {
+    margin: 0 0 4px 0;
+    padding-left: 28px;
+}
+
+
+// Tables
+table {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    th {
+      font-weight: $heading-font-weight;
+      font: $heading-font-weight #{$heading-font-size}/#{$heading-line-height} $heading-font-family;
+      color: $heading-color;
+    }
+    th, td {
+      padding: 8px;
+      line-height: 20px;
+      text-align: left;
+      vertical-align: top;
+      border-top: #EFEFEF 1px solid;
+    }
+}
+
+table caption + thead tr:first-child th,
+table caption + thead tr:first-child td,
+table colgroup + thead tr:first-child th,
+table colgroup + thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+    border-top: 0;
+}
+
+table tbody + tbody { border-top: #EFEFEF 2px solid; }
+
+table table table { background-color: #FFF; }
+
+table tbody > tr:nth-child(odd) > td,
+table tbody > tr:nth-child(odd) > th {
+    background-color: #F6F6F6;
+}
+
+table.plain tbody > tr:nth-child(odd) > td,
+table.plain tbody > tr:nth-child(odd) > th {
+    background: transparent;
+}
+
+// Blockquotes
+blockquote {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: -23px;
+    padding: 0 0 0 20px;
+    border-left: $grey-color-dark 3px solid;
+    p {
+        font-style: italic;
+    }
+    cite {
+      font-weight: 700;
+      a {
+          font-weight: normal;
+      }
+    }
+}

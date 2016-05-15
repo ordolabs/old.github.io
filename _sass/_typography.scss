@@ -1,0 +1,48 @@
+/**
+ * Basic styling
+ */
+body {
+    font: $text-font-weight #{$text-font-size}/#{$text-line-height} $text-font-family;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    letter-spacing: 0.1px;
+}
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6, .heading {
+    font-weight: $heading-font-weight;
+    font: $heading-font-weight #{$heading-font-size}/#{$heading-line-height} $heading-font-family;
+    color: $heading-color;
+}
+
+h1 {
+    font-size: $heading-font-size * 3;
+    letter-spacing: -3px;
+    text-indent: -3px;
+}
+h2 {
+    font-size: $heading-font-size * 2;
+    letter-spacing: -2px;
+    text-indent: -2px;
+}
+h3 {
+    font-size: $heading-font-size * 1.5;
+    letter-spacing: -1.5px;
+    text-indent: -1px;
+}
+h4 {
+    font-size: $heading-font-size * 1.2;
+}
+h5, h6 {
+    font-size: $heading-font-size * 1.1;
+}
+
+
